@@ -1,0 +1,43 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.search-section {
+    background-color: #ffffff; /* White background for contrast */
+    text-align: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.search-section h1 {
+    color: #1a53f0; /* Bright navy blue for consistency with main container */
+    margin: 0;
+}
+
+.category-section {
+    background-color: #e8f0f8; /* Light blue to match the main container */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.category-section h2 {
+    color: #34568B; /* Dark navy blue, similar to button color */
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.info-section {
+    background-color: #ffffff; /* Keeping white for cleanliness */
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    background-color: #172b4d; /* Navy blue, matching the overall theme */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+}

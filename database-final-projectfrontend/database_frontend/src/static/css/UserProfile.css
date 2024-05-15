@@ -1,0 +1,71 @@
+.user-profile-sidebar {
+    width: 20%;
+    min-width: 250px;
+    background-color: #34568B; /* Navy blue for sidebar */
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.user-profile-info {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.user-profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1a53f0; /* Lighter navy blue for a vibrant contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-edit-btn {
+    display: block;
+    width: calc(100% - 2rem);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1a53f0; /* Lighter navy blue for buttons */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    margin-left: 15px;
+}
+
+.user-profile-edit-btn:hover {
+    background-color: #34568B; /* Dark navy blue for hover, inverting the normal hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .user-profile-sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .user-dashboard {
+        margin-left: 0;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,54 @@
+/* Header.css */
+header {
+    background-color: #34568B; /* Dark navy blue, matching the button color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo a,
+header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header .logo a:hover,
+header nav a:hover {
+    background-color: #1a53f0; /* Lighter navy blue for hover, matches h1 hover */
+}
+
+header .logo a {
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
