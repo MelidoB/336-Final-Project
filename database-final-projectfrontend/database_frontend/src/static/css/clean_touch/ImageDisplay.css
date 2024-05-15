@@ -1,0 +1,17 @@
+.image-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+}
+
+.image-display img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 4px;
+}

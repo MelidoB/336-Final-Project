@@ -1,0 +1,10 @@
+/* Footer.css */
+.sticky-footer {
+    background-color: #172b4d; /* Navy blue, consistent with main theme */
+    color: white; /* Ensuring text is clearly visible */
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

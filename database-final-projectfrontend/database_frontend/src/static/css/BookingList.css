@@ -1,0 +1,28 @@
+.booking-list-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.booking-list-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+li:hover {
+    background-color: #e9e9e9;
+}

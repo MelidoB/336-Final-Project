@@ -1,0 +1,61 @@
+.clean_touch-home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.clean_touch-main-picture-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Set a height for the container to maintain aspect ratio */
+}
+
+.clean_touch-search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Higher z-index to ensure it's above the carousel images */
+    background-color: rgba(255, 255, 255, 0.9); /* White with 50% opacity */
+
+}
+  
+  
+.clean_touch-search-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.clean_touch-search-section h1 {
+    color: #7070bf;
+    margin: 0;
+}
+
+.clean_touch-category-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.clean_touch-category-section h2 {
+    color: #3f3f7c;
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.clean_touch-info-section {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+}
+
+.clean_touch-footer {
+    background-color: #c3dceb;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
