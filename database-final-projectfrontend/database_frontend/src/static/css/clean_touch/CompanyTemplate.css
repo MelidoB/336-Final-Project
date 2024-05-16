@@ -1,11 +1,24 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the page container occupies the full height of the viewport */
+    margin: 20px;
+    padding: 20px;
+}
+
 .company-card {
     max-width: 600px;
-    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
 }
 
 .company-card img {
@@ -16,6 +29,7 @@
 
 .company-card h2, .company-card h3 {
     color: #333;
+    margin-bottom: 10px;
 }
 
 .company-card p {
