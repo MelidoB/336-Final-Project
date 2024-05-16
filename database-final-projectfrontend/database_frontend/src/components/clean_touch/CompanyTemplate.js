@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom';
 import data from "../../static/clean_touch_companyData.json";  // Assuming data is structured as shown
 import CleanTouchHeader from './Header';
 import CleanTouchFooter from './Footer';
+import '../../static/css/clean_touch/CompanyTemplate.css';
 
+/*
 function EachCompanyPage({ companyInfo }) {
     return (
         <div className="bg-gray-100 dark:bg-gray-800 min-h-screen flex flex-col">
@@ -28,8 +30,25 @@ function EachCompanyPage({ companyInfo }) {
             <CleanTouchFooter />
         </div>
     );
-}
+}*/
 
+function EachCompanyPage({ companyInfo }) {
+    return (
+        <div>
+            <CleanTouchHeader />
+            <div className="company-card">
+                <h2>{companyInfo["Company Name"]}</h2>
+                <img src={companyInfo["Image"]} alt={companyInfo["Company Name"]} />
+                <h3>{companyInfo["Offer Title"]}</h3>
+                <p className="price">Price: {companyInfo["Price"]}</p>
+                <p className="address">Address: {companyInfo["Company Address"]}</p>
+                <p className="rating">Rating: {companyInfo["Offer Rating"]} / 5</p>
+                <a href={companyInfo["Offer Link"]} target="_blank" rel="noopener noreferrer" className="view-offer-button">View Offer</a>
+            </div>
+            <CleanTouchFooter />
+        </div>
+    );
+}
 
 
 
@@ -45,7 +64,7 @@ function IndividualCompanyPage() {
         setLoading(false);
     }, [companyName]);  // Depend on companyName to re-run this effect
 
-    
+
     if (loading) {
         return <div>Loading...</div>;
     }
